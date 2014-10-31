@@ -24,7 +24,6 @@ import com.sensoro.beacon.kit.SensoroBeaconManager;
 import java.util.ArrayList;
 
 public class SensoroActivity extends Activity implements SensoroBeaconManager.BeaconManagerListener, SensoroBeaconConnection.BeaconConnectionCallback {
-	private static final String TAG = SensoroActivity.class.getSimpleName();
 	private static final int REQUEST_ENABLE_BT = 1000;
 	private Context context;
 	private ListView listView;
@@ -217,73 +216,9 @@ public class SensoroActivity extends Activity implements SensoroBeaconManager.Be
 
 	}
 
-	@Override
-	public void onSetNewPassword(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onDisabledPassword(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onCheckPassword(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onSetBaseSetting(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onSetSensorSetting(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onSetMajoMinor(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onSetProximityUUID(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onResetToFactory(Beacon beacon, int status) {
-
-	}
 
 	@Override
 	public void onResetAcceleratorCount(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onUpdateSensorData(Beacon beacon, int status) {
-
-	}
-
-	@Override
-	public void onTemperatureDataUpdate(Beacon beacon, int temperature) {
-
-	}
-
-	@Override
-	public void onBrightnessLuxDataUpdate(Beacon beacon, double lux) {
-
-	}
-
-	@Override
-	public void onAcceleratorMovingUpdate(Beacon beacon, int isMovingState) {
-
-	}
-
-	@Override
-	public void onAcceleratorCountUpdate(Beacon beacon, int count) {
 
 	}
 
@@ -347,5 +282,83 @@ public class SensoroActivity extends Activity implements SensoroBeaconManager.Be
 			private TextView modleTextView = null;
 			private ImageView stateImageView = null;
 		}
+	}
+
+	@Override
+	public void onAcceleratorCountUpdate(Beacon beacon, int count) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onAcceleratorMovingUpdate(Beacon beacon, int movingState) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onBrightnessLuxDataUpdate(Beacon beacon, double brightness) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onCheckPassword(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onDisabledPassword(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onResetToFactory(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onSetBaseSetting(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onSetMajoMinor(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onSetNewPassword(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onSetProximityUUID(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onSetSensorSetting(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onTemperatureDataUpdate(Beacon beacon, int temperature) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onUpdateSensorData(Beacon beacon, int status) {
+		// TODO Auto-generated method stub
+		
 	}
 }

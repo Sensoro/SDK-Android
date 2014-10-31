@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sensoro.sensorobeaconkitdemo" >
+    package="com.sensoro.sensorobeaconkitdemo" 
+    android:versionCode="1"
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -23,10 +25,8 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.sensoro.beacon.kit.BeaconProcessService" >
-        </service>
-        <service android:name="com.sensoro.beacon.kit.BeaconService" >
-        </service>
+        <service android:name="com.sensoro.beacon.kit.BeaconProcessService" />
+        <service android:name="com.sensoro.beacon.kit.BeaconService" />
     </application>
 
 </manifest>
