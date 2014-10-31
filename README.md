@@ -38,6 +38,10 @@ You should add following permissions and services declaration to your *AndroidMa
 
 ## Changelog
 
+- 2.0
+	- Change Java annotation of SBK from Chinese to English.
+    - Support that the hardware of Yunzi is above 2.0.
+    - Throw exception when calls `startService`.
 - 1.1
     - Support that the hardware of Yunzi is 2.0.
     - Add a value ` ADVERTISING_INTERVAL_1285` of *AdvertisingInterval*.
