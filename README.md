@@ -1,13 +1,13 @@
 SBK for  Android
 =======================
 
-SBK, the full name is Sensoro Beacon Kit, which is a part of Sensoro SDK. The SBK for Android is a library that allows interaction with [Yunzi](http://www.sensoro.com/). 
+SBK (Sensoro Beacon Kit) is a part of Sensoro SDK. The SBK for Android is a library that allows interaction with [Yunzi](http://www.sensoro.com/). 
 
 ## Installation
 
 ### 1. Import *sensorobeaconkit.jar*
 
-Copy  *sensorobeaconkit.jar* to your **libs** directory. If your project does not exist **libs** folder, touch it in root directory. Right click on your project, choose **New**, and click **Folder**, you can create a new directory.
+Copy  *sensorobeaconkit.jar* to your **libs** directory. If your project does not exist **libs** folder, make it in root directory. 
 
 ### 2. Declar in *AndroidManifest.xml*
 
@@ -36,8 +36,15 @@ You should add following permissions and services declaration to your *AndroidMa
 - [Community Portal of Sensoro](https://sensoro.zendesk.com/hc/communities/public/questions?locale=en-us)
 - [User Guide](http://www.sensoro.com/docs/)
 
+## FAQ
+
+Please see [FAQ](https://sensoro.zendesk.com/hc/en-us) in [Sensoro](http://www.sensoro.com/).
+
 ## Changelog
 
+- 2.1
+    - Improve the JavaDoc of SBK.
+    - Add the version of SBK.
 - 2.0
 	- Change Java annotation of SBK from Chinese to English.
     - Support that the hardware of Yunzi is above 2.0.
