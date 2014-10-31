@@ -13,7 +13,7 @@ Copy  *sensorobeaconkit.jar* to your **libs** directory. If your project does no
 
 You should add following permissions and services declaration to your *AndroidManifest.xml*:
 
-```
+```xml
 <manifest
     ...
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -38,5 +38,9 @@ You should add following permissions and services declaration to your *AndroidMa
 
 ## Changelog
 
+- 1.1
+    - Support that the hardware of Yunzi is 2.0.
+    - Add a value ` ADVERTISING_INTERVAL_1285` of *AdvertisingInterval*.
+    - Fix some bugs.
 - 1.0
     - Initial version.
