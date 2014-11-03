@@ -1,7 +1,7 @@
-SBK for  Android
+SDK for  Android
 =======================
 
-SBK (Sensoro Beacon Kit) is a part of Sensoro SDK. The SBK for Android is a library that allows interaction with [Yunzi](http://www.sensoro.com/). 
+The SDK for Android is a library that allows interaction with [Yunzi](http://www.sensoro.com/). 
 
 ## Installation
 
@@ -42,11 +42,15 @@ Please see [FAQ](https://sensoro.zendesk.com/hc/en-us) in [Sensoro](http://www.s
 
 ## Changelog
 
+- 2.1.1
+	- **Important upgrade**: Upgrade APIs. For more [click](https://github.com/sensoro/SBK-Android/releases/tag/v2.1.1) here.
+	- Fix *ConcurrentModificationException* bug.
+
 - 2.1
-    - Improve the JavaDoc of SBK.
-    - Add the version of SBK.
+    - Improve the JavaDoc of SDK.
+    - Add the version of SDK.
 - 2.0
-	- Change Java annotation of SBK from Chinese to English.
+	- Change Java annotation of SDK from Chinese to English.
     - Support that the hardware of Yunzi is above 2.0.
     - Throw exception when calls `startService`.
 - 1.1
