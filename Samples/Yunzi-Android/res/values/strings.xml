@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yunzi</string>
+    <string name="search_sn_id">Search SN or ID</string>
+    <string name="rssi">RSSI:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="light">Light:</string>
+    <string name="move">Moving:</string>
+    <string name="move_count">Moving count:</string>
+    <string name="model">Model:</string>
+    <string name="firmware">Firmware:</string>
+    <string name="battery">Battery:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ask_bt_open">Do you want to open bluetooth</string>
+    <string name="distance">Distance:</string>
+    <string name="dark">Dark</string>
+    <string name="normal">Normal</string>
+    <string name="glare">Glare</string>
+    <string name="degree">°C</string>
+    <string name="disable">Disable</string>
+    <string name="add">+1</string>
+    <string name="tips_header">When the switch button is open,</string>
+    <string name="tips_tail">you will receive notifications.</string>
+    <string name="a0">a0</string>
+    <string name="b0">b0</string>
+    <string name="icon_fa_star">&#xf005;</string>
+    <string name="icon_fa_user">&#xf007;</string>
+    <string name="icon_fa_fresh">&#xf021;</string>
+    <string name="icon_fa_info_circle">&#xf05a;</string>
+    <string name="disappear">Disappear</string>
+    <string name="immediate">immediate</string>
+    <string name="far">Far</string>
+    <string name="near">Near</string>
+    <string name="yunzi">Yunzi</string>
+    <string name="back">Back</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/beacons_grid_padding_bottom" >
+
+    <ImageView
+        android:id="@+id/fragment_beacons_grid_item_iv"
+        android:layout_width="@dimen/beacons_grid_img_size"
+        android:layout_height="@dimen/beacons_grid_img_size"
+        android:contentDescription="Beacon Image" />
+
+    <TextView
+        android:id="@+id/fragment_beacons_grid_item_tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/beacons_grid_text_size" />
+
+    <TextView
+        android:id="@+id/fragment_beacons_grid_item_tv_sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/beacons_grid_text_size" />
+
+</LinearLayout>

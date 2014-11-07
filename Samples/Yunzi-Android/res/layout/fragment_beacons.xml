@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/fragment_beacons_et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/search_sn_id"
+        android:textColor="@color/textColor" />
+
+    <GridView
+        android:id="@+id/fragment_beacons_gv_beacons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fragment_beacons_et_search"
+        android:numColumns="3" >
+    </GridView>
+
+</RelativeLayout>

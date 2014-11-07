@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center" >
+
+    <com.sensoro.experience.tool.SwitchButton
+        android:id="@+id/fragment_notification_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/fragment_notification_tips_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_notification_sb"
+        android:gravity="center"
+        android:text="@string/tips_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_notification_tips_header"
+        android:gravity="center"
+        android:text="@string/tips_tail" />
+
+</RelativeLayout>

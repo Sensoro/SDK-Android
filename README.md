@@ -42,6 +42,10 @@ Please see [FAQ](https://sensoro.zendesk.com/hc/en-us) in [Sensoro](http://www.s
 
 ## Changelog
 
+- 2.1.2
+	- Add API secure broadcast - `writeSecureBroadcastRotationInterval`.
+	- Fix calculate accelerometer count bug.
+
 - 2.1.1
 	- **Important upgrade**: Upgrade APIs. For more [click](https://github.com/sensoro/SBK-Android/releases/tag/v2.1.1) here.
 	- Fix *ConcurrentModificationException* bug.

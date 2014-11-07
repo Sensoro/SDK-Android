@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云子</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="search_sn_id">输入 SN 或 ID 进行搜索</string>
+    <string name="rssi">RSSI:</string>
+    <string name="temperature">温度:</string>
+    <string name="light">光线:</string>
+    <string name="move">移动:</string>
+    <string name="move_count">移动计数器:</string>
+    <string name="model">型号:</string>
+    <string name="firmware">固件:</string>
+    <string name="battery">电池:</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="ask_bt_open">是否打开蓝牙</string>
+    <string name="distance">距离:</string>
+    <string name="dark">昏暗</string>
+    <string name="normal">普通</string>
+    <string name="glare">明亮</string>
+    <string name="degree">°C</string>
+    <string name="disable">未开启</string>
+    <string name="add">+1</string>
+    <string name="tips_header">当推送开关开启时,</string>
+    <string name="tips_tail">进入和离开云子将收到推送</string>
+    <string name="a0">a0</string>
+    <string name="b0">b0</string>
+    <string name="icon_fa_star">&#xf005;</string>
+    <string name="icon_fa_user">&#xf007;</string>
+    <string name="icon_fa_fresh">&#xf021;</string>
+    <string name="icon_fa_info_circle">&#xf05a;</string>
+    <string name="disappear">消失</string>
+    <string name="immediate">很近</string>
+    <string name="far">较远</string>
+    <string name="near">较近</string>
+    <string name="move_num">移动次数:</string>
+    <string name="yunzi">云子</string>
+    <string name="back">返回</string>
+
+</resources>

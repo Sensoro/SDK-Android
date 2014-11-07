@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <dimen name="beacons_grid_text_size">12dp</dimen>
+    <dimen name="beacons_grid_padding_bottom">20dp</dimen>
+    <dimen name="detail_img_padding_bottom">20dp</dimen>
+    <dimen name="detail_img_padding_top">20dp</dimen>
+    <dimen name="beacons_grid_img_size">60dp</dimen>
+    <dimen name="detail_grid_img_padding">10dp</dimen>
+    <dimen name="fragment_range_position_padding">10dp</dimen>
+    <dimen name="detail_grid_item_padding_bottom">6dp</dimen>
+
+<dimen name="title_font_size">20dp</dimen>
+    <dimen name="title_padding">10dp</dimen>
+
+</resources>
