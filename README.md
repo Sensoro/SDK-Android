@@ -42,6 +42,10 @@ Please see [FAQ](https://sensoro.zendesk.com/hc/en-us) in [Sensoro](http://www.s
 
 ## Changelog
 
+- 2.1.3
+	- Add ENUM `SecureBroadcastInterval`.
+	- Change API `writeSecureBroadcastRotationInterval(int)` to `writeSecureBroadcastInterval(SecureBroadcastInterval)`.
+
 - 2.1.2
 	- Add API secure broadcast - `writeSecureBroadcastRotationInterval`.
 	- Fix calculate accelerometer count bug.
