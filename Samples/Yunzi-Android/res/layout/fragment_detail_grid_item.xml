@@ -7,12 +7,12 @@
 
     <com.sensoro.experience.tool.TTFIcon
         android:id="@+id/fragment_detail_grid_item_iv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/detail_item_radius"
+        android:layout_height="@dimen/detail_item_radius"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/background_circle"
         android:gravity="center"
-        android:padding="@dimen/detail_grid_img_padding" />
+        android:padding="@dimen/detail_grid_img_padding"                         android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/fragment_detail_grid_item_tv_name"

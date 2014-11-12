@@ -50,6 +50,9 @@ public class TemperatureFragment extends Fragment implements OnBeaconChangeListe
 		}
 		int temperature = beacon.getTemperature();
 		if (temperature == Integer.MAX_VALUE) {
+			/*
+			 * The temperature sensor is closed.
+			 */
 			valueTextView.setText(R.string.disable);
 			return;
 		}

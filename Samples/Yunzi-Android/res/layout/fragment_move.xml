@@ -42,7 +42,7 @@
         android:layout_alignTop="@id/fragment_move_value_layout"
         android:layout_toRightOf="@id/fragment_move_value_layout"
         android:text="@string/add"
-android:textColor="@android:color/white"
+        android:textColor="@android:color/white"
         android:visibility="gone" />
 
 </RelativeLayout>

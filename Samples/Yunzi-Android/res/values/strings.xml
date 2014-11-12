@@ -26,14 +26,28 @@
     <string name="a0">a0</string>
     <string name="b0">b0</string>
     <string name="icon_fa_star">&#xf005;</string>
+    <string name="icon_fa_map_marker">&#xf041;</string>
+    <string name="icon_fa_cloud">&#xf0c2;</string>
+    <string name="icon_fa_lightbulb_o">&#xf0eb;</string>
+    <string name="icon_fa_rocket">&#xf135;</string>
+    <string name="icon_fa_rss">&#xf09e;</string>
     <string name="icon_fa_user">&#xf007;</string>
     <string name="icon_fa_fresh">&#xf021;</string>
     <string name="icon_fa_info_circle">&#xf05a;</string>
+    <string name="icon_fa_bullseye">&#xf140;</string>
     <string name="disappear">Disappear</string>
     <string name="immediate">immediate</string>
     <string name="far">Far</string>
     <string name="near">Near</string>
+    <string name="move_num">Move count:</string>
     <string name="yunzi">Yunzi</string>
     <string name="back">Back</string>
+
+<string name="title_distance">Distance</string>
+    <string name="title_range">Range</string>
+    <string name="title_temperature">Temperature</string>
+    <string name="title_light">Light</string>
+    <string name="title_move">Move</string>
+    <string name="title_notification">Notification</string>
 
 </resources>

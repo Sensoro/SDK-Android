@@ -10,15 +10,17 @@
         android:id="@+id/fragment_light_civ"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
         android:scaleType="centerCrop"
         android:src="#000000" />
 
     <TextView
         android:id="@+id/fragment_light_value"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fragment_light_civ"
         android:layout_marginTop="5dp"
-android:textColor="@android:color/white" />
+        android:gravity="center"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>

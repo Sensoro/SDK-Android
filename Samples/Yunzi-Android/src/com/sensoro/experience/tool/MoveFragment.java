@@ -55,6 +55,13 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 		if (beacon == null) {
 			return;
 		}
+		if (beacon.getMovingState() == Integer.MAX_VALUE) {
+			/*
+			 * Accelerometer is closed.
+			 */
+			valueTextView.setText(getString(R.string.disable));
+			return;
+		}
 		if (beacon.getMovingState() == 0) {
 			animationDrawable.stop();
 			valueTextView.setText(moveNum + "");
@@ -65,6 +72,9 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 				return;
 			}
 		} else if (beacon.getMovingState() == 1) {
+			/*
+			 * The beacon is moving
+			 */
 			animationDrawable.start();
 		}
 
@@ -92,16 +102,25 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 	}
 
 	private void initCtrl() {
-		beacon = (Beacon) getArguments().get(MainActivity.BEACON);
-		moveNum = beacon.getAccelerometerCount();
 		activity = (MainActivity) getActivity();
 		setHasOptionsMenu(true);
-
 		valueTextView = (TextView) oneself.findViewById(R.id.fragment_move_value);
 		addTextView = (TextView) oneself.findViewById(R.id.fragment_move_add);
 		earthView = (ImageView) oneself.findViewById(R.id.fragment_move_earth);
 		animationDrawable = (AnimationDrawable) earthView.getBackground();
+		
+		beacon = (Beacon) getArguments().get(MainActivity.BEACON);
+		int state = beacon.getMovingState();
+		if (state == Integer.MAX_VALUE) {
+			/*
+			 * accelerometer is closed.
+			 */
+			valueTextView.setText(getString(R.string.disable));
+		} else {
+			moveNum = beacon.getAccelerometerCount();
 		valueTextView.setText(moveNum + "");
+	}
+
 	}
 
 	@Override

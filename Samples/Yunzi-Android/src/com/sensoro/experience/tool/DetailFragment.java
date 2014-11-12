@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
 import com.sensoro.beacon.kit.Beacon;
 import com.sensoro.experience.tool.MainActivity.OnBeaconChangeListener;
-
 import android.R.anim;
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -170,9 +168,9 @@ public class DetailFragment extends Fragment implements OnBeaconChangeListener, 
 
 		items = new ArrayList<Map<String, Object>>();
 
-		String[] names = new String[] { "距离", "范围", "温度", "光线", "移动", "推送" };
+		String[] names = new String[] { getString(R.string.title_distance), getString(R.string.title_range), getString(R.string.title_temperature), getString(R.string.title_light), getString(R.string.title_move), getString(R.string.title_notification) };
 
-		String[] icons = new String[] { getString(R.string.icon_fa_star), getString(R.string.icon_fa_star), getString(R.string.icon_fa_star), getString(R.string.icon_fa_star), getString(R.string.icon_fa_star), getString(R.string.icon_fa_star) };
+		String[] icons = new String[] { getString(R.string.icon_fa_map_marker), getString(R.string.icon_fa_bullseye), getString(R.string.icon_fa_cloud), getString(R.string.icon_fa_lightbulb_o), getString(R.string.icon_fa_rocket), getString(R.string.icon_fa_rss) };
 		HashMap<String, Object> map = null;
 		int pos = 0;
 		for (String icon : icons) {

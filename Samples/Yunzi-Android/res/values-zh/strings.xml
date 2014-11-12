@@ -26,10 +26,6 @@
     <string name="tips_tail">进入和离开云子将收到推送</string>
     <string name="a0">a0</string>
     <string name="b0">b0</string>
-    <string name="icon_fa_star">&#xf005;</string>
-    <string name="icon_fa_user">&#xf007;</string>
-    <string name="icon_fa_fresh">&#xf021;</string>
-    <string name="icon_fa_info_circle">&#xf05a;</string>
     <string name="disappear">消失</string>
     <string name="immediate">很近</string>
     <string name="far">较远</string>
@@ -37,5 +33,11 @@
     <string name="move_num">移动次数:</string>
     <string name="yunzi">云子</string>
     <string name="back">返回</string>
+    <string name="title_distance">距离</string>
+    <string name="title_range">范围</string>
+    <string name="title_temperature">温度</string>
+    <string name="title_light">光线</string>
+    <string name="title_move">移动</string>
+    <string name="title_notification">推送</string>
 
 </resources>
