@@ -32,7 +32,7 @@ You should add following permissions and services declaration to your *AndroidMa
 
 ## Docs
 
-- [Current JavaDoc Documentation](http://static.sensoro.com/documents/SBK/Android/index.html)
+- [Current JavaDoc Documentation](http://sensoro.github.io/SDK-Android/doc/index.html)
 - [Community Portal of Sensoro](https://sensoro.zendesk.com/hc/communities/public/questions?locale=en-us)
 - [User Guide](http://www.sensoro.com/docs/)
 
