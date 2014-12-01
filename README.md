@@ -32,7 +32,7 @@ You should add following permissions and services declaration to your *AndroidMa
 
 ## Docs
 
-- [Current JavaDoc Documentation](http://static.sensoro.com/documents/SBK/Android/index.html)
+- [Current JavaDoc Documentation](http://sensoro.github.io/download/sdk/android/doc/index.html)
 - [Community Portal of Sensoro](https://sensoro.zendesk.com/hc/communities/public/questions?locale=en-us)
 - [User Guide](http://www.sensoro.com/docs/)
 
@@ -42,6 +42,11 @@ Please see [FAQ](https://sensoro.zendesk.com/hc/en-us) in [Sensoro](http://www.s
 
 ## Changelog
 
+- 2.1.4
+	- `Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3.`
+    - Deprecated `TransmitPower.MIN`, `TransmitPower.LOW`, `TransmitPower.MEDIUM`, `TransmitPower.HIGH` and `TransmitPower.MAX`.
+    - Add `TransmitPower.LEVEL0`, `TransmitPower.LEVEL1`, `TransmitPower.LEVEL2`, `TransmitPower.LEVEL3` , `TransmitPower.LEVEL4`, `TransmitPower.LEVEL5`, `TransmitPower.LEVEL6`and `TransmitPower.LEVEL7`.
+    - **Important upgrade**. For more details to see [Javadoc](http://sensoro.github.io/download/sdk/android/doc/index.html).
 - 2.1.3
     - `Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3.`
     - Add ENUM `SecureBroadcastInterval`.
