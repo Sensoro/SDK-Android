@@ -24,3 +24,6 @@ proguard/
 
 # Log Files
 *.log
+
+# MAC
+.DS_Store
