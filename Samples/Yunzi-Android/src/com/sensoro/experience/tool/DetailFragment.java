@@ -1,11 +1,15 @@
 package com.sensoro.experience.tool;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
 import com.sensoro.beacon.kit.Beacon;
+import com.sensoro.beacon.kit.Beacon.MovingState;
 import com.sensoro.experience.tool.MainActivity.OnBeaconChangeListener;
+
 import android.R.anim;
 import android.app.Activity;
 import android.graphics.Bitmap;
@@ -114,15 +118,46 @@ public class DetailFragment extends Fragment implements OnBeaconChangeListener, 
 		if (beacon == null) {
 			return;
 		}
+		String tmpString = null;
+
 		rssiTextView.setText(beacon.getRssi() + "");
-		temperatureTextView.setText(beacon.getTemperature() + "");
-		lightTextView.setText(beacon.getLight() + "");
-		moveTextView.setText(beacon.getMovingState() + "");
-		moveCountTextView.setText(beacon.getAccelerometerCount() + "");
+		Integer temp = beacon.getTemperature();
+		if (temp == null) {
+			tmpString = getString(R.string.closed);
+		} else {
+			tmpString = temp + " " + getString(R.string.degree);
+		}
+		temperatureTextView.setText(tmpString);
+
+		Double light = beacon.getLight();
+		if (light == null) {
+			tmpString = getString(R.string.closed);
+		} else {
+			tmpString = new DecimalFormat("#0.00").format(light) + " " + getString(R.string.lx);
+		}
+		lightTextView.setText(tmpString);
+
+		MovingState state = beacon.getMovingState();
+		if (state == MovingState.STILL) {
+			tmpString = getString(R.string.still);
+		} else if (state == MovingState.MOVING) {
+			tmpString = getString(R.string.moving);
+		} else if (state == MovingState.DISABLED) {
+			tmpString = getString(R.string.closed);
+		}
+		moveTextView.setText(tmpString);
+
+		if (state == MovingState.DISABLED) {
+			tmpString = getString(R.string.closed);
+		} else {
+			tmpString = beacon.getAccelerometerCount() + "";
+		}
+
+		moveCountTextView.setText(tmpString);
+
 		modelTextView.setText(beacon.getHardwareModelName());
 		firmwareTextView.setText(beacon.getFirmwareVersion());
-		batteryTextView.setText(beacon.getBatteryLevel() + "%");
-
+		batteryTextView.setText(beacon.getBatteryLevel() + getString(R.string.percent));
 	}
 
 	private void initTTF() {

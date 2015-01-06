@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 /*
  * The temperature of the beacon.
  */
@@ -48,8 +49,8 @@ public class TemperatureFragment extends Fragment implements OnBeaconChangeListe
 		if (beacon == null) {
 			return;
 		}
-		int temperature = beacon.getTemperature();
-		if (temperature == Integer.MAX_VALUE) {
+		Integer temperature = beacon.getTemperature();
+		if (temperature == null) {
 			/*
 			 * The temperature sensor is closed.
 			 */

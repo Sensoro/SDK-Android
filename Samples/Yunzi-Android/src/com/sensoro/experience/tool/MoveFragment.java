@@ -16,6 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.sensoro.beacon.kit.Beacon;
+import com.sensoro.beacon.kit.Beacon.MovingState;
 import com.sensoro.experience.tool.MainActivity.OnBeaconChangeListener;
 
 /*
@@ -55,14 +56,14 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 		if (beacon == null) {
 			return;
 		}
-		if (beacon.getMovingState() == Integer.MAX_VALUE) {
+		if (beacon.getMovingState() == MovingState.DISABLED) {
 			/*
 			 * Accelerometer is closed.
 			 */
 			valueTextView.setText(getString(R.string.disable));
 			return;
 		}
-		if (beacon.getMovingState() == 0) {
+		if (beacon.getMovingState() == MovingState.STILL) {
 			animationDrawable.stop();
 			valueTextView.setText(moveNum + "");
 			if (beacon.getAccelerometerCount() > moveNum) {
@@ -71,7 +72,7 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 				addTextView.startAnimation(addAnimation);
 				return;
 			}
-		} else if (beacon.getMovingState() == 1) {
+		} else if (beacon.getMovingState() == MovingState.MOVING) {
 			/*
 			 * The beacon is moving
 			 */
@@ -110,8 +111,8 @@ public class MoveFragment extends Fragment implements OnBeaconChangeListener {
 		animationDrawable = (AnimationDrawable) earthView.getBackground();
 		
 		beacon = (Beacon) getArguments().get(MainActivity.BEACON);
-		int state = beacon.getMovingState();
-		if (state == Integer.MAX_VALUE) {
+		MovingState state = beacon.getMovingState();
+		if (state == MovingState.DISABLED) {
 			/*
 			 * accelerometer is closed.
 			 */

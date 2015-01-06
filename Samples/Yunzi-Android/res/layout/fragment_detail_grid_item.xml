@@ -12,7 +12,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/background_circle"
         android:gravity="center"
-        android:padding="@dimen/detail_grid_img_padding"                         android:textColor="@color/black" />
+        android:padding="@dimen/detail_grid_img_padding"                                 android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/fragment_detail_grid_item_tv_name"

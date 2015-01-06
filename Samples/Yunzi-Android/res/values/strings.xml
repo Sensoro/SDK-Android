@@ -18,7 +18,6 @@
     <string name="dark">Dark</string>
     <string name="normal">Normal</string>
     <string name="glare">Glare</string>
-    <string name="degree">°C</string>
     <string name="disable">Disable</string>
     <string name="add">+1</string>
     <string name="tips_header">When the switch button is open,</string>
@@ -49,5 +48,12 @@
     <string name="title_light">Light</string>
     <string name="title_move">Move</string>
     <string name="title_notification">Notification</string>
+
+<string name="degree">℃</string>
+    <string name="percent">%</string>
+    <string name="still">still</string>
+    <string name="moving">moving</string>
+    <string name="closed">closed</string>
+    <string name="lx">lx</string>
 
 </resources>

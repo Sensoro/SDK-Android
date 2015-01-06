@@ -47,9 +47,9 @@ public class LightFragment extends Fragment implements OnBeaconChangeListener {
 		if (beacon == null) {
 			return;
 		}
-		double light = beacon.getLight();
+		Double light = beacon.getLight();
 		String format = null;
-		if (light == Double.MAX_VALUE) {
+		if (light == null) {
 			/*
 			 * The light sensor is closed.
 			 */
@@ -57,7 +57,7 @@ public class LightFragment extends Fragment implements OnBeaconChangeListener {
 			valueTextView.setText(format);
 			return;
 		}
-		format = new DecimalFormat("#.00").format(light);
+		format = new DecimalFormat("#0.00").format(light);
 		if (light < 10) {
 			circleImageView.setImageResource(R.color.dark);
 			valueTextView.setText(getString(R.string.dark) + " (" + format + ")");
