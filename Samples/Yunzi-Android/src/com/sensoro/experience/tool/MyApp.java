@@ -1,6 +1,6 @@
 package com.sensoro.experience.tool;
 
-import com.sensoro.beacon.kit.SensoroBeaconManager;
+import com.sensoro.cloud.SensoroManager;
 
 import android.app.Application;
 import android.util.Log;
@@ -8,7 +8,7 @@ import android.util.Log;
 public class MyApp extends Application {
 
 	private static final String TAG = MyApp.class.getSimpleName();
-	SensoroBeaconManager sensoroBeaconManager;
+	SensoroManager sensoroManager;
 
 	@Override
 	public void onCreate() {
@@ -17,9 +17,10 @@ public class MyApp extends Application {
 	}
 
 	private void initSensoro() {
-		sensoroBeaconManager = SensoroBeaconManager.getInstance(getApplicationContext());
+		sensoroManager = SensoroManager.getInstance(getApplicationContext());
+		sensoroManager.setCloudServiceEnable(false);
 		try {
-			sensoroBeaconManager.startService();
+			sensoroManager.startService();
 		} catch (Exception e) {
 			Log.e(TAG, e.toString());
 		}
@@ -27,8 +28,8 @@ public class MyApp extends Application {
 
 	@Override
 	public void onTerminate() {
-		if (sensoroBeaconManager != null) {
-			sensoroBeaconManager.stopService();
+		if (sensoroManager != null) {
+			sensoroManager.stopService();
 		}
 		super.onTerminate();
 	}

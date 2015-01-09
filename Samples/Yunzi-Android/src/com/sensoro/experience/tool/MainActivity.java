@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import com.sensoro.beacon.kit.Beacon;
-import com.sensoro.beacon.kit.SensoroBeaconManager;
-import com.sensoro.beacon.kit.SensoroBeaconManager.BeaconManagerListener;
+import com.sensoro.beacon.kit.BeaconManagerListener;
+import com.sensoro.cloud.SensoroManager;
 
 import android.app.ActionBar;
 import android.app.AlertDialog.Builder;
@@ -24,14 +24,12 @@ import android.content.SharedPreferences;
 import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -68,9 +66,9 @@ public class MainActivity extends FragmentActivity {
 	BeaconManagerListener beaconManagerListener;
 	MyApp app;
 	/*
-	 * Sensoro Beacon Manager
+	 * Sensoro Manager
 	 */
-	SensoroBeaconManager sensoroBeaconManager;
+	SensoroManager sensoroManager;
 	/*
 	 * store beacons in onUpdateBeacon
 	 */
@@ -132,7 +130,7 @@ public class MainActivity extends FragmentActivity {
 		inflater = getLayoutInflater();
 		app = (MyApp) getApplication();
 		matchFormat = "%s-%04x-%04x";
-		sensoroBeaconManager = app.sensoroBeaconManager;
+		sensoroManager = app.sensoroManager;
 		beacons = new CopyOnWriteArrayList<Beacon>();
 		beaconListeners = new ArrayList<OnBeaconChangeListener>();
 		notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -364,7 +362,7 @@ public class MainActivity extends FragmentActivity {
 				// Notification n = new Notification(R.drawable.ic_launcher,
 				// "Hello,there!", System.currentTimeMillis());
 				// n.flags = Notification.FLAG_AUTO_CANCEL;
-				// // n.flags = Notification.FLAG_NO_CLEAR; // ¿ÉÒÔÈÃÍ¨Öª²»±»É¾µô
+				// // n.flags = Notification.FLAG_NO_CLEAR; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨Öªï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
 				// Intent i = new Intent(getApplicationContext(),
 				// MainActivity.class);
 				// i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
@@ -377,7 +375,7 @@ public class MainActivity extends FragmentActivity {
 				// n.setLatestEventInfo(getApplicationContext(), "Hello,there!",
 				// "Hello,there,I'm john.", null);
 				// nm.notify(R.string.app_name, n);
-				// nm.cancel(R.string.app_name); // È¡ÏûÍ¨Öª
+				// nm.cancel(R.string.app_name); // È¡ï¿½ï¿½Í¨Öª
 
 			}
 		});
@@ -389,9 +387,9 @@ public class MainActivity extends FragmentActivity {
 	 */
 	private void startSensoroService() {
 		// set a tBeaconManagerListener.
-		sensoroBeaconManager.setBeaconManagerListener(beaconManagerListener);
+		sensoroManager.setBeaconManagerListener(beaconManagerListener);
 		try {
-			sensoroBeaconManager.startService();
+			sensoroManager.startService();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
