@@ -21,7 +21,7 @@
 **集成 SDK jar 包**
 
 
-    在工程根目录新建 libs 文件夹，将下载的 SDK 解压到到该文件夹中。
+	在工程根目录新建 libs 文件夹，将下载的 SDK 解压到到该文件夹中。
 
 
 下面是 SDK 所包含的模块：
@@ -38,14 +38,14 @@
 
 1. 在 **AndroidManifest.xml** 中集成 SDK 所需要的权限
 
-``` 
+```	
 <manifest
-    ...
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    ...
+	...
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+  	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+   	<uses-permission android:name="android.permission.INTERNET" />
+   	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	...
 </manifest>
 ```
 
@@ -53,15 +53,15 @@
 
 ```
 <manifest
-    ...
-    <application
-        ...
-        <service android:name="com.sensoro.beacon.kit.BeaconProcessService"/>
-        <service android:name="com.sensoro.beacon.kit.BeaconService"/>
-        <service android:name="com.sensoro.beacon.kit.IntentProcessorService"/>
-        ...
-    </application>
-    ...
+	...
+	<application
+		...
+		<service android:name="com.sensoro.beacon.kit.BeaconProcessService"/>
+		<service android:name="com.sensoro.beacon.kit.BeaconService"/>
+		<service android:name="com.sensoro.beacon.kit.IntentProcessorService"/>
+		...
+	</application>
+	...
 </manifest>
 ```
 
@@ -76,18 +76,18 @@ SensoroManager sensoroManager = SensoroManager.getInstance(context);
  * 检查蓝牙是否开启
  **/
 if (sensoroManager.isBluetoothEnabled()) {
-    /**
-     * 设置启用云服务 (上传传感器数据，如电量、UMM等)。如果不设置，默认为关闭状态。
-     **/
-    sensoroManager.setCloudServiceEnable(true);
-    /**
-     * 启动 SDK 服务
-     **/
-    try {
-        sensoroManager.startService();
-    } catch (Exception e) {
-     e.printStackTrace(); // 捕获异常信息
-    }
+	/**
+	 * 设置启用云服务 (上传传感器数据，如电量、UMM等)。如果不设置，默认为关闭状态。
+	 **/
+	sensoroManager.setCloudServiceEnable(true);
+	/**
+	 * 启动 SDK 服务
+	 **/
+	try {
+	    sensoroManager.startService();
+	} catch (Exception e) {
+   	 e.printStackTrace(); // 捕获异常信息
+	}
 }
 ```
 
@@ -149,14 +149,14 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
     @Override
     public void onNewBeacon(Beacon beacon) {
         if (beacon.getSerialNumber().equals("0117C5456A36")){
-            // 进入 SN 为"0117C5456A36 的云子
+        	// 进入 SN 为"0117C5456A36 的云子
         }       
     }
     
     @Override
     public void onGoneBeacon(Beacon beacon) {
         if (beacon.getSerialNumber().equals("0117C5456A36")){
-            // 离开 SN 为"0117C5456A36 的云子
+        	// 离开 SN 为"0117C5456A36 的云子
         }      
     }
 };
@@ -198,18 +198,18 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 
     @Override
     public void onUpdateBeacon(final ArrayList<Beacon> beacons) {
-        // 检查串码为"0117C5456A36"的云子，运动状态是否有变化
-        for(Beacon beacon:beacons){
-            if (beacon.getSerialNumber().equals("0117C5456A36")){
-                if (beacon.getMovingState() == Beacon.MovingState.DISABLED){
-                    // 运动传感器禁用
-                } else if (beacon.getMovingState() == Beacon.MovingState.STILL){ 
-                    // 传感器静止
-                } else if (beacon.getMovingState() == Beacon.MovingState.MOVING){
-                    // 传感器正在运动
-                }
+    	// 检查串码为"0117C5456A36"的云子，运动状态是否有变化
+    	for(Beacon beacon:beacons){
+        	if (beacon.getSerialNumber().equals("0117C5456A36")){
+           		if (beacon.getMovingState() == Beacon.MovingState.DISABLED){
+            		// 运动传感器禁用
+            	} else if (beacon.getMovingState() == Beacon.MovingState.STILL){ 
+            		// 传感器静止
+            	} else if (beacon.getMovingState() == Beacon.MovingState.MOVING){
+            		// 传感器正在运动
+            	}
             }
-        }
+    	}
     }
     
     @Override
