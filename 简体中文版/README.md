@@ -1,5 +1,5 @@
-# Android SDK
-=====
+SDK-Android
+=================
 
 欢迎使用云子/标签，本质上它们是一种带有 iBeacon 功能的无线智能传感器设备。
 
@@ -20,23 +20,18 @@
 
 **集成 SDK jar 包**
 
-
-	在工程根目录新建 libs 文件夹，将下载的 SDK 解压到到该文件夹中。
-
+在工程根目录新建 libs 文件夹，将下载的 SDK 解压到到该文件夹中。
 
 下面是 SDK 所包含的模块：
-
 - sensorocloud-<版本号>.jar
 - sensorobeaconkit-<版本号>.jar
 - android-async-http-1.4.6.jar
 - greendao-1.3.7.jar
 - gson-2.3.1.jar
 
-
-
 **修改 AndroidManifest.xml**
 
-1. 在 **AndroidManifest.xml** 中集成 SDK 所需要的权限
+1.在 **AndroidManifest.xml** 中集成 SDK 所需要的权限
 
 ```	
 <manifest
@@ -48,8 +43,7 @@
 	...
 </manifest>
 ```
-
-2. 在 **AndroidManifest.xml** 中集成 SDK 所依赖的服务
+2.在 **AndroidManifest.xml** 中集成 SDK 所依赖的服务
 
 ```
 <manifest
@@ -163,7 +157,7 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 sensoroManager.setBeaconManagerListener(beaconManagerListener);
 ```
 
-** 提示：**
+**提示：**
 
 - 回调函数是在非 UI 线程中运行的，请不要在回调函数中进行任何 UI 的相关相关操作，否则会导致 SDK 运行异常。如有需要，请通过 Handler 或者 Activity.runOnUiThread 方式来运行你的代码。
 
@@ -224,7 +218,7 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 };
 ```
 
-** 提示：**
+**提示：**
 
 - 回调函数是在非 UI 线程中运行的，请不要在回调函数中进行任何 UI 的相关相关操作，否则会导致 SDK 运行异常。如有需要，请通过 Handler 或者 Activity.runOnUiThread 方式来运行你的代码。
 
