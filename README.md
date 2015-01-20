@@ -241,4 +241,50 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 ###总结
 至此，您已完成将 SDK 整合进您项目之中的全部工作。后面，您可以使用 SDK 的功能来完成您 App 与 云子传感器 之间的互动，更多技术细节，请参考完整的 SDK 文档，以及我们的示例应用程序源代码。
 
+### 附录
 
+##### Sensoro Beacon 功率档位说明
+
+<table>
+	<tr>
+  		<th rowspan="2">档位/型号</th>
+  		<th colspan="2">A0</th>
+		<th colspan="2">B0</th>
+		<th colspan="2">C0</th>
+	</tr>
+	<tr>
+		<td>信号强度(单位:dbm)</td>
+		<td>覆盖范围(单位:m)</td>
+		<td>信号强度(单位:dbm)</td>
+		<td>覆盖范围(单位:m)</td>
+		<td>信号强度(单位:dbm)</td>
+		<td>覆盖范围(单位:m)</td>
+	</tr>
+	<tr>
+		<td>LEVEL0</td>
+		<td>-23</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>LEVEL0</td>
+		<td>-23</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>LEVEL0</td>
+		<td>-23</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+		<td>-30</td>
+		<td>2</td>
+	</tr>
+</table>
