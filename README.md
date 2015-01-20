@@ -266,8 +266,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>约 2 m</td>
 		<td>-30 dbm</td>
 		<td>约 2 m</td>
-		<td>微距 -30 dbm</td>
-		<td>约 10 cm</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL1</td>
@@ -275,8 +275,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>约 7 m</td>
 		<td>-20 dbm</td>
 		<td>约 7 m</td>
-		<td>微距 -20 dbm</td>
-		<td>约 80 cm</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL2</td>
@@ -284,8 +284,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>约 15 m</td>
 		<td>-16 dbm</td>
 		<td>约 10 m</td>
-		<td>微距 -16 dbm</td>
-		<td>约 1.5 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL3</td>
@@ -293,8 +293,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-12 dbm</td>
 		<td>约 15 m</td>
-		<td>微距 -12 dbm</td>
-		<td>约 3  m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL4</td>
@@ -302,8 +302,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-8 dbm</td>
 		<td>约 22 m</td>
-		<td>-30 dbm</td>
-		<td>约 5 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL5</td>
@@ -311,8 +311,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-4 dbm</td>
 		<td>约 27 m</td>
-		<td>-20 dbm</td>
-		<td>约 7 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL6</td>
@@ -320,8 +320,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>0 dbm</td>
 		<td>约 50 m</td>
-		<td>-16 dbm</td>
-		<td>约 10 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL7</td>
@@ -329,8 +329,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>+4 dbm</td>
 		<td>约 90 m</td>
-		<td>-12 dbm</td>
-		<td>约 15 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL8</td>
@@ -338,8 +338,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-</td>
 		<td>-</td>
-		<td>-8 dbm</td>
-		<td>约 22 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL9</td>
@@ -347,8 +347,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-</td>
 		<td>-</td>
-		<td>-4 dbm</td>
-		<td>约 27 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL10</td>
@@ -356,8 +356,8 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-</td>
 		<td>-</td>
-		<td>0 dbm</td>
-		<td>约 50 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 	<tr align="center">
 		<td>LEVEL11</td>
@@ -365,7 +365,7 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<td>-</td>
 		<td>-</td>
 		<td>-</td>
-		<td>+4 dbm</td>
-		<td>约 90 m</td>
+		<td>-</td>
+		<td>-</td>
 	</tr>
 </table>
