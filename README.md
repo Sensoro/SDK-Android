@@ -252,39 +252,120 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 		<th colspan="2">B0</th>
 		<th colspan="2">C0</th>
 	</tr>
-	<tr>
-		<td>信号强度(单位:dbm)</td>
-		<td>覆盖范围(单位:m)</td>
-		<td>信号强度(单位:dbm)</td>
-		<td>覆盖范围(单位:m)</td>
-		<td>信号强度(单位:dbm)</td>
-		<td>覆盖范围(单位:m)</td>
+	<tr align="center">
+		<td>信号强度</td>
+		<td>覆盖范围</td>
+		<td>信号强度</td>
+		<td>覆盖范围</td>
+		<td>信号强度</td>
+		<td>覆盖范围</td>
 	</tr>
-	<tr>
+	<tr align="center">
 		<td>LEVEL0</td>
-		<td>-23</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
+		<td>-23 dbm</td>
+		<td>约 2 m</td>
+		<td>-30 dbm</td>
+		<td>约 2 m</td>
+		<td>微距 -30 dbm</td>
+		<td>约 10 cm</td>
 	</tr>
-	<tr>
-		<td>LEVEL0</td>
-		<td>-23</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
+	<tr align="center">
+		<td>LEVEL1</td>
+		<td>-6 dbm</td>
+		<td>约 7 m</td>
+		<td>-20 dbm</td>
+		<td>约 7 m</td>
+		<td>微距 -20 dbm</td>
+		<td>约 80 cm</td>
 	</tr>
-	<tr>
-		<td>LEVEL0</td>
-		<td>-23</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
-		<td>-30</td>
-		<td>2</td>
+	<tr align="center">
+		<td>LEVEL2</td>
+		<td>0 dbm</td>
+		<td>约 15 m</td>
+		<td>-16 dbm</td>
+		<td>约 10 m</td>
+		<td>微距 -16 dbm</td>
+		<td>约 1.5 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL3</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-12 dbm</td>
+		<td>约 15 m</td>
+		<td>微距 -12 dbm</td>
+		<td>约 3  m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL4</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>约 22 m</td>
+		<td>-30 dbm</td>
+		<td>约 5 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL5</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>约 27 m</td>
+		<td>-20 dbm</td>
+		<td>约 7 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL6</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>约 50 m</td>
+		<td>-16 dbm</td>
+		<td>约 10 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL7</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>约 90 m</td>
+		<td>-12 dbm</td>
+		<td>约 15 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL8</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>约 22 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL9</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>约 27 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL10</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>约 50 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL11</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>约 90 m</td>
 	</tr>
 </table>
