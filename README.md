@@ -2,7 +2,7 @@ Android SDK
 =================
 Yunzi and Sensoro Tag are a kind of wireless intelligent sensor integrated with iBeacon function. 
 
-**Through employing our Android SDK, mainly you will achieve functions below: **
+**Through employing our Android SDK, mainly you will achieve functions below:**
 
 1. Range nearby sensory devices
 2. Fetch configurations of the devices
@@ -162,7 +162,7 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 sensoroManager.setBeaconManagerListener(beaconManagerListener);
 ```
 
-** Tips：**
+**Tips：**
 
 - The callback function is run in a non-UI thread. Please do not perform any UI related operations in the callback function, otherwise it may cause an exception running of the SDK. Please excute your code with Handler or Activity.runOnUiThread if necessary. 
 
@@ -223,7 +223,7 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 };
 ```
 
-** Tips：**
+**Tips：**
 
 - The callback function is run in a non-UI thread. Please do not perform any UI related operations in the callback function, otherwise it may cause an exception running of the SDK. Please excute your code with Handler or Activity.runOnUiThread if necessary. 
 
@@ -238,7 +238,7 @@ You will be able to enable 'Prevent squatters' function of Yunzi, claiming your 
 sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 ```
 
-**Tips: **
+**Tips：**
 
 - Please setup before enabling the SDK
 - If the SDK is not capable to range the device, please check whether the key used for the device is in accordance with the setup in the SDK. 
@@ -247,5 +247,132 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 ###Conclusion
 So far, you have accomplished all procedures integrating SDK to your project. With the aid of our SDK, interactions between App and Beacon can be easily achieved. For more technical details, please refer to complete <a href="http://sensoro.github.io/download/sdk/android/doc/index.html" target="_blank">SDK documents</a>, and our <a href="https://github.com/Sensoro/Yunzi-Android" target="_blank">Demo's source code</a>.
 
+### Appendices
 
+##### Sensoro Beacon Power Specification
+
+<table>
+	<tr>
+  		<th rowspan="2">LEVEL/MODEL</th>
+  		<th colspan="2">A0</th>
+		<th colspan="2">B0</th>
+		<th colspan="2">C0</th>
+	</tr>
+	<tr align="center">
+		<td>RSSI</td>
+		<td>Range</td>
+		<td>RSSI</td>
+		<td>Range</td>
+		<td>RSSI</td>
+		<td>Range</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL0</td>
+		<td>-23 dbm</td>
+		<td>~2 m</td>
+		<td>-30 dbm</td>
+		<td>~2 m</td>
+		<td>Micro -30 dbm</td>
+		<td>~5 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL1</td>
+		<td>-6 dbm</td>
+		<td>~7 m</td>
+		<td>-20 dbm</td>
+		<td>~7 m</td>
+		<td>Micro -20 dbm</td>
+		<td>~50 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL2</td>
+		<td>0 dbm</td>
+		<td>~15 m</td>
+		<td>-16 dbm</td>
+		<td>~10 m</td>
+		<td>Micro -16 dbm</td>
+		<td>~80 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL3</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-12 dbm</td>
+		<td>~15 m</td>
+		<td>Micro -12 dbm</td>
+		<td>~1.5 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL4</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>~22 m</td>
+		<td>-30 dbm</td>
+		<td>~2 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL5</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>~27 m</td>
+		<td>-20 dbm</td>
+		<td>~7 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL6</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>~50 m</td>
+		<td>-16 dbm</td>
+		<td>~15 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL7</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>~90 m</td>
+		<td>-12 dbm</td>
+		<td>~20 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL8</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>~25 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL9</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>~45 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL10</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>~70 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL11</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>~100 m</td>
+	</tr>
+</table>
 
