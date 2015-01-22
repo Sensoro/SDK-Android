@@ -241,4 +241,131 @@ sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
 ###总结
 至此，您已完成将 SDK 整合进您项目之中的全部工作。后面，您可以使用 SDK 的功能来完成您 App 与 云子传感器 之间的互动，更多技术细节，请参考完整的 SDK 文档，以及我们的示例应用程序源代码。
 
+### 附录
 
+##### Sensoro Beacon 功率档位说明
+
+<table>
+	<tr>
+  		<th rowspan="2">档位/型号</th>
+  		<th colspan="2">A0</th>
+		<th colspan="2">B0</th>
+		<th colspan="2">C0</th>
+	</tr>
+	<tr align="center">
+		<td>信号强度</td>
+		<td>覆盖范围</td>
+		<td>信号强度</td>
+		<td>覆盖范围</td>
+		<td>信号强度</td>
+		<td>覆盖范围</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL0</td>
+		<td>-23 dbm</td>
+		<td>约 2 m</td>
+		<td>-30 dbm</td>
+		<td>约 2 m</td>
+		<td>微距 -30 dbm</td>
+		<td>约 5 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL1</td>
+		<td>-6 dbm</td>
+		<td>约 7 m</td>
+		<td>-20 dbm</td>
+		<td>约 7 m</td>
+		<td>微距 -20 dbm</td>
+		<td>约 50 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL2</td>
+		<td>0 dbm</td>
+		<td>约 15 m</td>
+		<td>-16 dbm</td>
+		<td>约 10 m</td>
+		<td>微距 -16 dbm</td>
+		<td>约 80 cm</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL3</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-12 dbm</td>
+		<td>约 15 m</td>
+		<td>微距 -12 dbm</td>
+		<td>约 1.5 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL4</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>约 22 m</td>
+		<td>-30 dbm</td>
+		<td>约 2 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL5</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>约 27 m</td>
+		<td>-20 dbm</td>
+		<td>约 7 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL6</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>约 50 m</td>
+		<td>-16 dbm</td>
+		<td>约 15 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL7</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>约 90 m</td>
+		<td>-12 dbm</td>
+		<td>约 20 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL8</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-8 dbm</td>
+		<td>约 25 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL9</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-4 dbm</td>
+		<td>约 45 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL10</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>0 dbm</td>
+		<td>约 70 m</td>
+	</tr>
+	<tr align="center">
+		<td>LEVEL11</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>-</td>
+		<td>+4 dbm</td>
+		<td>约 100 m</td>
+	</tr>
+</table>
