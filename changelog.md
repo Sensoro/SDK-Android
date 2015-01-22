@@ -1,5 +1,14 @@
 Changelog
 ==========
+### 3.1.0
+> Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0.
+  
+  1. Add model *C0* supported.
+  2. Add `TransmitPower.LEVEL8` ~ `TransmitPower.LEVEL11` for *C0*. For more details please to see [README.MD](https://github.com/Sensoro/SDK-Android)
+  3. Change `AdvertisingInterval.getAdvertisingIntervalValue` and `TransmitPower.getTransmitPowerValue` return type.
+  4. Add API `TransmitPower.isMicroTX`.
+  5. Fixed some bugs.
+
 ### 3.0.0
 > Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0.
   
