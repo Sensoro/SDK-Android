@@ -25,8 +25,8 @@ You may download the latest Android SDK from following link：
 
 The SDK includes following modules：
 
-- sensorocloud-<Version>.jar
-- sensorobeaconkit-<Version>.jar
+- sensorocloud-\<Version\>.jar
+- sensorobeaconkit-\<Version\>.jar
 - android-async-http-1.4.6.jar
 - greendao-1.3.7.jar
 - gson-2.3.1.jar
