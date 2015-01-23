@@ -1,5 +1,12 @@
 Changelog
 ==========
+### 3.1.1
+> Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0.
+  
+  1. Improve the `SensoroBeaconConnection.onConnectedState`. If the beacon disconnects from the phone, the `status` of callback will be `SensoroBeaconConnection.SERVICE_OR_CHARACTERISTIC_NOT_EXIST`.
+  2. Improve the `SensoroBeaconConnection.writeSecureBroadcastInterval`. You cann't write `SecureBroadcastInterval.NONE` into model *C0*.
+  3. Fixed some bugs.
+
 ### 3.1.0
 > Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0.
   
