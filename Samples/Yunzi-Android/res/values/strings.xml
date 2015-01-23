@@ -42,14 +42,14 @@
     <string name="yunzi">Yunzi</string>
     <string name="back">Back</string>
 
-<string name="title_distance">Distance</string>
+	<string name="title_distance">Distance</string>
     <string name="title_range">Range</string>
     <string name="title_temperature">Temperature</string>
     <string name="title_light">Light</string>
     <string name="title_move">Move</string>
     <string name="title_notification">Notification</string>
 
-<string name="degree">℃</string>
+	<string name="degree">℃</string>
     <string name="percent">%</string>
     <string name="still">still</string>
     <string name="moving">moving</string>

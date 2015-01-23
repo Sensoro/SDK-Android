@@ -250,7 +250,7 @@ public class RangeFragment extends Fragment implements OnBeaconChangeListener {
 	@Override
 	public void onBeaconChange(ArrayList<Beacon> beacons) {
 		for (Beacon beacon : beacons) {
-			if (beacon.getProximityUUID().equals(this.beacon.getProximityUUID()) && beacon.getMajor() == this.beacon.getMajor() && beacon.getMinor() == this.beacon.getMinor()) {
+			if (beacon.getSerialNumber() != null && beacon.getSerialNumber().equals(this.beacon.getSerialNumber())) {
 				updateView(beacon);
 				this.beacon = beacon;
 				break;
