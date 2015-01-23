@@ -38,8 +38,23 @@
     <string name="title_move">移动</string>
     <string name="title_notification">推送</string>
 
-<string name="still">静止</string>
+	<string name="still">静止</string>
     <string name="moving">运动</string>
     <string name="closed">关闭</string>
 
+    <string name="icon_fa_star">&#xf005;</string>
+    <string name="icon_fa_map_marker">&#xf041;</string>
+    <string name="icon_fa_cloud">&#xf0c2;</string>
+    <string name="icon_fa_lightbulb_o">&#xf0eb;</string>
+    <string name="icon_fa_rocket">&#xf135;</string>
+    <string name="icon_fa_rss">&#xf09e;</string>
+    <string name="icon_fa_user">&#xf007;</string>
+    <string name="icon_fa_fresh">&#xf021;</string>
+    <string name="icon_fa_info_circle">&#xf05a;</string>
+    <string name="icon_fa_bullseye">&#xf140;</string>
+	
+	<string name="degree">℃</string>
+    <string name="percent">%</string>
+    <string name="lx">lx</string>
+        
 </resources>
