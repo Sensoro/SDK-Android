@@ -90,7 +90,6 @@ public class DistanceFragment extends Fragment implements OnBeaconChangeListener
 		//boolean exist = false;		//这一次找不到不代表Beacon已经离开区域, by caisenchuan
 		for (Beacon beacon : beacons) {
 			if (beacon.getSerialNumber() != null && beacon.getSerialNumber().equals(this.beacon.getSerialNumber())) {
-				Log.i("Alex", "Find beacon : " + beacon);
 				this.beacon = beacon;
 				updateView(beacon);
 				//exist = true;
