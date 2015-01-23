@@ -9,6 +9,7 @@ import com.sensoro.experience.tool.MainActivity.OnBeaconChangeListener;
 import android.R.bool;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -86,18 +87,19 @@ public class DistanceFragment extends Fragment implements OnBeaconChangeListener
 
 	@Override
 	public void onBeaconChange(ArrayList<Beacon> beacons) {
-		boolean exist = false;
+		//boolean exist = false;		//这一次找不到不代表Beacon已经离开区域, by caisenchuan
 		for (Beacon beacon : beacons) {
-			if (beacon.getProximityUUID().equals(this.beacon.getProximityUUID()) && beacon.getMajor() == this.beacon.getMajor() && beacon.getMinor() == this.beacon.getMinor()) {
+			if (beacon.getSerialNumber() != null && beacon.getSerialNumber().equals(this.beacon.getSerialNumber())) {
+				Log.i("Alex", "Find beacon : " + beacon);
 				this.beacon = beacon;
 				updateView(beacon);
-				exist = true;
+				//exist = true;
 				break;
 			}
 		}
-		if (!exist) {
+		/*if (!exist) {
 			distanceTextView.setText(R.string.disappear);
-		}
+		}*/
 	}
 
 	@Override
