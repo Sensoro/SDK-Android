@@ -35,6 +35,7 @@ public class BeaconsFragment extends Fragment implements OnItemClickListener {
 
 	Bitmap b0Bitmap;
 	Bitmap a0Bitmap;
+	Bitmap c0Bitmap;
 
 	MainActivity activity;
 
@@ -103,6 +104,7 @@ public class BeaconsFragment extends Fragment implements OnItemClickListener {
 	private void initDrawable() {
 		a0Bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.yunzi_a0);
 		b0Bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.yunzi_b0);
+		c0Bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.yunzi_4aa);
 	}
 
 	@Override
@@ -179,6 +181,8 @@ public class BeaconsFragment extends Fragment implements OnItemClickListener {
 				viewHolder.imageView.setImageBitmap(a0Bitmap);
 			} else if (model.equalsIgnoreCase(activity.getString(R.string.b0))) {
 				viewHolder.imageView.setImageBitmap(b0Bitmap);
+			} else if (model.equalsIgnoreCase(activity.getString(R.string.c0))) {
+				viewHolder.imageView.setImageBitmap(c0Bitmap);
 			}
 			/*
 			 * set id

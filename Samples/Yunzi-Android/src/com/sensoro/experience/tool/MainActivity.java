@@ -264,12 +264,11 @@ public class MainActivity extends FragmentActivity {
 						if (TextUtils.isEmpty(beaconFilter)) {
 							beacons.add(beacon);
 						} else {
-							String matckString = String.format(matchFormat, beacon.getSerialNumber(), beacon.getMajor(), beacon.getMinor());
-							if (matckString.contains(beaconFilter)) {
+							String matchString = String.format(matchFormat, beacon.getSerialNumber(), beacon.getMajor(), beacon.getMinor());
+							if (matchString.contains(beaconFilter)) {
 						beacons.add(beacon);
 					}
 				}
-
 					}
 				}
 				runOnUiThread(new Runnable() {
@@ -362,7 +361,8 @@ public class MainActivity extends FragmentActivity {
 				// Notification n = new Notification(R.drawable.ic_launcher,
 				// "Hello,there!", System.currentTimeMillis());
 				// n.flags = Notification.FLAG_AUTO_CANCEL;
-				// // n.flags = Notification.FLAG_NO_CLEAR; // ������֪ͨ����ɾ��
+				// // n.flags = Notification.FLAG_NO_CLEAR; //
+				// ������֪ͨ����ɾ��
 				// Intent i = new Intent(getApplicationContext(),
 				// MainActivity.class);
 				// i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
