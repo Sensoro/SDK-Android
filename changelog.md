@@ -1,5 +1,12 @@
 Changelog
 ==========
+### 3.2.0
+> Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0.
+  
+  1. Fixed bug: It will crash SDK when scanning some beacons.
+  2. Support broadcast keys with valid period.
+  3. Fixed some other bugs.
+
 ### 3.1.1
 > Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0.
   
