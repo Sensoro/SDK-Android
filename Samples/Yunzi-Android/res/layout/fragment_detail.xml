@@ -20,8 +20,8 @@
 
             <ImageView
                 android:id="@+id/fragment_detail_iv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:contentDescription="Beacon Image"
                 android:paddingBottom="@dimen/detail_img_padding_bottom"
                 android:paddingTop="@dimen/detail_img_padding_top" />

@@ -108,6 +108,8 @@ public class DetailFragment extends Fragment implements OnBeaconChangeListener, 
 			imageView.setImageResource(R.drawable.yunzi_a0);
 		} else if (model.equalsIgnoreCase(getString(R.string.b0))) {
 			imageView.setImageResource(R.drawable.yunzi_b0);
+		} else if (model.equalsIgnoreCase(getString(R.string.c0))) {
+			imageView.setImageResource(R.drawable.yunzi_4aa);
 		}
 		String id = String.format("ID:%04x-%04x", beacon.getMajor(), beacon.getMinor());
 		idTextView.setText(id);
