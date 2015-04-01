@@ -19,6 +19,8 @@ public class MyApp extends Application {
 	private void initSensoro() {
 		sensoroManager = SensoroManager.getInstance(getApplicationContext());
 		sensoroManager.setCloudServiceEnable(false);
+		sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
+		
 		try {
 			sensoroManager.startService();
 		} catch (Exception e) {
