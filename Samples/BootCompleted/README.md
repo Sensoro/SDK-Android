@@ -1,19 +1,16 @@
-# 开机启动 Sensoro SDK
+# How to start Sensoro SDK on setup
 
-> 作者：Sensoro
+>  Author：Sensoro
 >
->  版本：v1.0 
+>  Version：v1.0 
 >  
->  时间：2015年04月10日14:44:53
+>  Date：2015/04/13/18:40:21
 
+In some cases, it needs to start SDK to monitor iBeacons when Android devices set up.
 
-根据业务需求，可能需要在 Android 设备开机时，启动 SDK 来监听周边的 iBeacon。
+### Listen BroacastReceiver on setup
 
-### 开机广播监听
-
-在 Android 系统中，开机启动需要监听系统开机广播 `android.intent.action.BOOT_COMPLETED`。
-
-1.实现接收器监听开机广播
+1.Implement a BroacastReceiver to listen boot completed broadcast `android.intent.action.BOOT_COMPLETED` when devices set up.
 
 ```
 public class BootCompletedBroadcastReceiver extends BroadcastReceiver {
@@ -39,7 +36,7 @@ public class BootCompletedBroadcastReceiver extends BroadcastReceiver {
 }
 ```
 
-2.在 AndroidManifest.xml 中注册广播接收器
+2.Register a broadcast receiver in `AndroidManifest.xml`.
 
 ```
 <receiver android:name="com.sensoro.bootcompleted.BootCompletedBroadcastReceiver">
@@ -50,90 +47,91 @@ public class BootCompletedBroadcastReceiver extends BroadcastReceiver {
 </receiver>
 ```
 
-接收到开机广播后，可以通过 Activity 或者后台 Service 来启动 SDK。
+After receiving boot completed broadcast, you can start SDK in Activity or in Background Service.
 
-### Activity 中启动 SDK
+### Start SDK in Activity
 
-接收到开机广播之后，可以直接启动 APP 的 Activity，此时可以在 Activity 的 onCreate 函数中，启动 SDK。
+After receiving boot completed broadcast, you can start an Activity of App. Start SDK in function `onCreate` of Activity.
 
 ```
 if (application.isBluetoothEnabled()){
-	application.startSensoroSDK();
+    application.startSensoroSDK();
 } 
 ```
 
-如果蓝牙没有开启，在 Activity 中有两种方式开启蓝牙：
+If the bluetooth is disabled, there are two ways to enable it:
 
-- 请求蓝牙权限开启蓝牙
-- 后台静默开启蓝牙
+- Require bluetooth permission to enbale.
+- Enable bluetooth in background in silence.
 
-#### 请求蓝牙权限开启蓝牙
 
-通过 Intent 请求，获得用户允许之后打开蓝牙
+#### Require bluetooth permission to enbale
+
+Require permission to enable bluetooth with `Intent`.
 
 ```
 Intent bluetoothIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
 startActivityForResult(bluetoothIntent, REQUEST_ENABLE_BT);
 ```
 
-在`onActivityResult`回调中启动 SDK
+Start SDK in callback of `onActivityResult`.
 
 ```
 @Override
 protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-	super.onActivityResult(requestCode, resultCode, data);
-	if (requestCode == REQUEST_ENABLE_BT && resultCode == RESULT_OK){
-		application.startSensoroSDK();
-	}
+    super.onActivityResult(requestCode, resultCode, data);
+    if (requestCode == REQUEST_ENABLE_BT && resultCode == RESULT_OK){
+        application.startSensoroSDK();
+    }
 }
 ```
 
-#### 后台静默开启蓝牙
+#### Enbale bluetooh in background in silence
 
-通过蓝牙 API，不经用户允许，直接打开蓝牙
+Enable bluetooth through Android API without permission.
 
 ```
 BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 bluetoothAdapter.enable();
 ```
-在蓝牙广播接收器中，启动 SDK
 
-class BluetoothBroadcastReceiver extends BroadcastReceiver {
+Start SDK in bluetooth BroadcastReceiver.
 
 ```
+class BluetoothBroadcastReceiver extends BroadcastReceiver {
 @Override
 public void onReceive(Context context, Intent intent) {
-	if (intent.getAction().equals(Constant.BLE_STATE_CHANGED_ACTION)){
-		if (application.isBluetoothEnabled()){
-			application.startSensoroSDK();
-		}
-	}
+    if (intent.getAction().equals(Constant.BLE_STATE_CHANGED_ACTION)){
+        if (application.isBluetoothEnabled()){
+            application.startSensoroSDK();
+        }
+    }
 }
 ```
 
-### Service 中启动 SDK
+### Start SDK in Background Service
 
-接收到开机广播之后，可以直接启动 APP 的 Service，在 Service 的 onCreate 函数中，启动 SDK。</br>
+After receiving boot completed broadcast, you can start a Background Service, and start SDK in function `onCreate` of Service.
 
 ```
 if (application.isBluetoothEnabled()){
-	application.startSensoroSDK();
+    application.startSensoroSDK();
 } 
 ```
 
-如果蓝牙没有开启，在 Service 中开启蓝牙的方式只有一种：后台静默开启蓝牙。具体操作方式与 Activity 的操作相同。
+If the bluetooth is disabled, there is the only one way to enbale it in Service: Enbale bluetooh in background in silence. The sample code is the same with Activity above.
 
-### 建议
+### Suggestion
 
-1. 没有特殊需求，尽量避免监听开机广播，随系统自启动 APP。
-2. 如果用户默认蓝牙关闭，尽量通过用户授权打开蓝牙，不推荐使用后台静默方式开启蓝牙。
+1. Avoid to listen boot completed broadcast to start app when devices set up if there are no special needs.
+2. If the bluetooth is disabled in default, it is batter to require permission to enable it than enable it in background in silence.
 
-### 附录
+### Appendix
 
-由于 Android 系统差异化原因，不保证以上方式适用于所有 Android 机型。</br>
-下面列举了已经测试过的 Android 机型：
+Because of Android fragmentation, it is not compatible with all Android devices.</br>
+Tested Android Devices List:
 
-| 型号           | 版本           |
+| Model         | Version       |
 | ------------- |:-------------:|
 | Nexus 5       | 5.0.1         |
 | Nexus 5       | 5.1           |
