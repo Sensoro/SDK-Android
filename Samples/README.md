@@ -1,17 +1,18 @@
 # Sensoro SDK Samples
 
-> 作者：Sensoro
+>  Author：Sensoro
 >
->  版本：v1.0 
+>  Version：v1.0 
 >  
->  时间：2015年04月10日14:58:18
+>  Date：2015/04/13/19:01:51
 
-该文档主要介绍了 Sensoro SDK 的一些使用方法和技巧，并附有源码示例。
+The souce code shows some skills of how to use Sensoro SDK.
 
 - Yunzi-Android
 
-	Sensoro SDK 的基本使用方法，包括 iBeacon 搜索和 iBeacon 的数据获取。	
+	How to use Sensoro SDK, includs how to discover Sensoro Beacon and get information of Sensoro Beacon.
+		
 - BootCompleted
 
-	Sensoro SDK 随设备开机启动的方法。
+	How to start Sensoro SDK on setup.
 
