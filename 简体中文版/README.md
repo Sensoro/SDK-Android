@@ -230,7 +230,7 @@ BeaconManagerListener beaconManagerListener = new BeaconManagerListener() {
 /**
  * 设置云子防蹭用密钥 (如果没有可以不设置)
  **/
-sensoroManager.addBroadcastKey("7b4b5ff594fdaf8f9fc7f2b494e400016f461205");
+sensoroManager.addBroadcastKey("01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig==");
 ```
 
 **提示：**
