@@ -1,5 +1,11 @@
 Changelog
 ==========
+### 3.2.5
+> Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0, C0-3.1.
+  
+  1. Support SDK to discover iBeacons when the screen is turned off.
+  2. Fixed some other bugs.
+
 ### 3.2.4
 > Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0, C0-3.1.
   
