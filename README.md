@@ -44,6 +44,7 @@ The SDK includes following modules：
   	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
    	<uses-permission android:name="android.permission.INTERNET" />
    	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+   	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	...
 </manifest>
 ```
