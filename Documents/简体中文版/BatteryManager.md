@@ -117,7 +117,7 @@ sensoroManager.setBackgroundBetweenScanPeriod(30000);
 
 ![](https://raw.githubusercontent.com/Sensoro/Sensoro.github.io/master/download/sdk/android/res/images/battery-manager-3.png)
 
-根据上述波形，功耗估算结果：（((200 * 60mV)/2 + (800 * 10mV))/1000ms)/0.1Ω = 140 mA
+根据上述波形，功耗估算结果：(((200 * 60mV)/2 + (800 * 10mV))/1000ms)/0.1Ω = 140 mA
 
 
 计算结果与实测结果在误差为 6mA。
