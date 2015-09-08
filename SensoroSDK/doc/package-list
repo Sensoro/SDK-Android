@@ -1,2 +1,4 @@
 com.sensoro.beacon.kit
+com.sensoro.beacon.kit.connection
+com.sensoro.beacon.kit.constants
 com.sensoro.cloud
