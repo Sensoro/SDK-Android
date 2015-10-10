@@ -377,3 +377,73 @@ So far, you have accomplished all procedures integrating SDK to your project. Wi
 	</tr>
 </table>
 
+
+##### Android-SDK 4.0  Beacon Configuration ResultCode Specification
+
+> Please use  *SensoroBeaconConnectionV4* and *BeaconConfiguration*  to config beacons since Android-SDK 4.0. Please refer to *resultCode* of callback as below.
+
+| HEX			| DEC			| Description	|
+| :-----------: |:-------------:| :------------:|
+| 0x0000		| 0				| Success		|
+| 0x0100     	| 256     		| MCU Busy		|
+| 0x0200		| 512      		| LED Busy		|
+| 0x0300		| 768      		| No Permission	|
+| 0x0400		| 1024      	| Invalid Configuration Command	|
+| 0x0500		| 1280      	| Params Length Invalid			|
+| 0x0501		| 1281      	| Power Length Invalid			|
+| 0x0502		| 1282      	| Adv Interval Length Invalid	|
+| 0x0503		| 1283      	| Mrssi Length Invalid			|
+| 0x0504		| 1284      	| Energy Saving Mode Length Invalid	|
+| 0x0505		| 1285      	| Password Length Invalid			|
+| 0x0506		| 1286      	| Work Indicator Length Invalid		|
+| 0x0511		| 1297      	| iBeacon Switch Length Invalid		|
+| 0x0512		| 1298      	| UUID Length Invalid				|
+| 0x0513		| 1299      	| Major Length Invalid				|
+| 0x0514		| 1300      	| Minor Length Invalid				|
+| 0x0515		| 1301      	| Broadcast Rotate Interval Length Invalid	|
+| 0x0516		| 1302      	| Background Enhancement Length Invalid		|
+| 0x0517		| 1303      	| Broadcast Key Length Invalid				|
+| 0x0521		| 1313      	| Temp Sampling Interval Length Invalid		|
+| 0x0522		| 1314      	| Light Sampling Interval Length Invalid	|
+| 0x0523		| 1315      	| Accelerometer Sensitivity Length Invalid	|
+| 0x0531		| 1329      	| UID Switch Length Invalid					|
+| 0x0532		| 1330      	| URL Switch Length Invalid					|	
+| 0x0533		| 1331      	| TLM Switch Length Invalid					|
+| 0x0534		| 1332      	| UID Length Invalid (NID)					|
+| 0x0535		| 1333      	| UID Length Invalid (BID)					|
+| 0x0536		| 1334      	| URL Length Invalid						|
+| 0x0537		| 1335      	| TLM Interval Length Invalid				|
+| 0x0541		| 1345      	| AliBeacon Switch Length Invalid			|
+| 0x0600		| 1536      	| Params Format Invalid						|
+| 0x0601		| 1537      	| Power Format Invalid						|
+| 0x0602		| 1538      	| Adv Interval Format Invalid				|	
+| 0x0603		| 1539      	| Mrssi Format Invalid						|
+| 0x0604		| 1540      	| Energy Saving Mode Format Invalid			|
+| 0x0605		| 1541      	| Password Format Invalid					|
+| 0x0606		| 1542      	| Work Indicator Format Invalid				|
+| 0x0611		| 1553      	| iBeacon Switch Format Invalid				|	
+| 0x0612		| 1554      	| UUID Format Invalid						|
+| 0x0613		| 1555      	| Major Format Invalid						|
+| 0x0614		| 1556      	| Minor Format Invalid						|
+| 0x0615		| 1557      	| Broadcast Rotate Interval Format Invalid	|
+| 0x0616		| 1558      	| Background Enhancement Format Invalid		|
+| 0x0617		| 1559      	| Broadcast Key Format Invalid				|
+| 0x0621		| 1569      	| Temp Sampling Interval Format Invalid		|
+| 0x0622		| 1570      	| Light Sampling Interval Format Invalid	|
+| 0x0623		| 1571      	| Accelerometer Sensitivity Format Invalid	|
+| 0x0631		| 1585      	| UID Switch Format Invalid					|
+| 0x0632		| 1586      	| URL Switch Format Invalid 				|	
+| 0x0633		| 1587      	| TLM Switch Format Invalid					|
+| 0x0634		| 1588      	| UID Format Invalid (NID)					|
+| 0x0635		| 1589      	| UID Format Invalid (BID)					|
+| 0x0636		| 1590      	| URL Format Invalid						|
+| 0x0637		| 1591      	| TLM Interval Format Invalid				|
+| 0x0641		| 1601      	| AliBeacon Switch Format Invalid			|
+| 0x0700		| 1792      	| Invalid Configuration Params				|		
+| 0x0800		| 2048      	| Protocol Version Error					|		
+| 0x8000		| 32768      	| Bluetooth Error							|
+| 0x8100		| 33024      	| Bluetooth Communication Error				|
+| 0x8200		| 33280      	| Bluetooth Connection Timeout				|
+| 0x8300		| 33536      	| Not Support								|
+
+
