@@ -1,5 +1,13 @@
 Changelog
 ==========
+### 4.0.0
+> Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, B0-4.0, C0-3.0, C0-3.1, C0-4.0.
+  
+  1. Support firmware 4.0 for B0 and C0.
+  2. Add Eddystone support.
+  3. Use `BeaconConfiguration` and `SensoroBeaconConnectionV4` to config firmware 4.0+.
+  4. Fixed some other bugs.
+
 ### 3.2.5
 > Support A0-1.0, B0-1.0, B0-2.0, B0-2.1, B0-2.2, B0-2.3, B0-3.0, C0-3.0, C0-3.1.
   
