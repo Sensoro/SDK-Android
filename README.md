@@ -25,6 +25,7 @@ You may download the latest Android SDK from following link：
 
 The SDK includes following modules：
 
+- sensoro-scanner-\<Version\>.jar
 - sensorocloud-\<Version\>.jar
 - sensorobeaconkit-\<Version\>.jar
 - android-async-http-1.4.6.jar
@@ -56,7 +57,6 @@ The SDK includes following modules：
 	...
 	<application
 		...
-		<service android:name="com.sensoro.beacon.kit.BeaconProcessService"/>
 		<service android:name="com.sensoro.beacon.kit.BeaconService"/>
 		<service android:name="com.sensoro.beacon.kit.IntentProcessorService"/>
 		...
