@@ -1,14 +1,18 @@
 # Sensoro SDK Documents
 
-> 作者：Sensoro
+>  Author:Sensoro
 >
->  版本：v1.0 
+>  Version:v1.0 
 >  
->  时间：2015年05月18日
+>  Date:2015-10-27 18:12:17
 
 该文档主要介绍了与 Sensoro SDK 相关的参考文档。
 
-- BatteryManager.md
+- Battery-Management.md
 
-	详细讲解了 Sensoro SDK 后台工作模式及原理，以及在后台模式下 SDK 的功耗表现，同时给出一些实测结果供用户参考。
+	Describe the principle of SENSORO SDK working in background mode. Also, it shows some measurement result about energy consumption of SDK in background mode.
+
+- User-Guide-For-Android-M.md
+
+	Describe how to use SENSORO SDK in Android 6.0.
 
