@@ -5,7 +5,7 @@ How to use SENSORO SDK in Android 6.0?
 >
 >  Version: 1.0
 >  
->  Date: 2015-10-27 18:53:00
+>  Date: 2015-10-27 18:53:00
 
 ### Background
 
