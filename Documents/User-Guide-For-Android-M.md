@@ -1,11 +1,11 @@
 How to use SENSORO SDK in Android 6.0?
 =================
 
->  Author:Sensoro
+>  Author: Sensoro
 >
->  Version:1.0
+>  Version: 1.0
 >  
->  Date:2015-10-27 18:12:17
+>  Date: 2015-10-27 18:53:00
 
 ### Background
 
@@ -19,13 +19,13 @@ While Google also released a new permissions model `Runtime Permissions` in Andr
 
 > If your App targetSdkVersion is 23 and above, you need do somethings below.
 
-1. Declare permission in `AndroidManifest.xml` as below
+1.Declare permission in `AndroidManifest.xml` as below:
 
 ```
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 ```
 
-2. Add sample codes below in the first `Activity` of App:：
+2.Add sample codes below in the first `Activity` of App:：
 
 ```
 ...
