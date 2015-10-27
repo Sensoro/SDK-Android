@@ -6,7 +6,7 @@
 >  
 >  Date:2015-10-27 18:12:17
 
-该文档主要介绍了与 Sensoro SDK 相关的参考文档。
+This document contains some references about using SENSORO SDK.
 
 - Battery-Management.md
 
