@@ -3,6 +3,7 @@ package com.sensoro.experience.tool;
 import com.sensoro.cloud.SensoroManager;
 
 import android.app.Application;
+import android.os.Build;
 import android.util.Log;
 
 public class MyApp extends Application {
@@ -22,6 +23,9 @@ public class MyApp extends Application {
 		sensoroManager.addBroadcastKey("01Y2GLh1yw3+6Aq0RsnOQ8xNvXTnDUTTLE937Yedd/DnlcV0ixCWo7JQ+VEWRSya80yea6u5aWgnW1ACjKNzFnig==");
 		try {
 			sensoroManager.startService();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            	sensoroManager.setForegroundScanPeriod(7000);
+            }
 		} catch (Exception e) {
 			Log.e(TAG, e.toString());
 		}

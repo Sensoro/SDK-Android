@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.DialogInterface.OnClickListener;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
@@ -390,6 +391,9 @@ public class MainActivity extends FragmentActivity {
 		sensoroManager.setBeaconManagerListener(beaconManagerListener);
 		try {
 			sensoroManager.startService();
+	        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            	sensoroManager.setForegroundScanPeriod(7000);
+            }
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
