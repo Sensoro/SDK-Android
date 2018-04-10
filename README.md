@@ -9,13 +9,13 @@ Yunzi and Sensoro Tag are a kind of wireless intelligent sensor integrated with 
 3. Upload devices’ status to  <a href="http://cloud.sensoro.com" target="_blank">SENSORO Cloud</a>
 4. Modify device configurations
 
-###Install SDK
-#####1. Download
+### Install SDK
+##### 1. Download
 You may download the latest Android SDK from following link：
   
 [Download address](https://github.com/Sensoro/SDK-Android)
 
-#####2. Installation and configuration
+##### 2. Installation and configuration
 
 **Integrate SDK .jar file**
 
@@ -65,7 +65,7 @@ The SDK includes following modules：
 </manifest>
 ```
 
-###Get started
+### Get started
 ##### I. Initialize the App
 
 Firstly you need to initialize SDK，and setup whether it will upload sensor data (battery status, UMM), etc. Then start ranging. Sample code of enable the SDK is as following:
