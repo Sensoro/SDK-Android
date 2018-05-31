@@ -28,7 +28,7 @@ The SDK includes following modules：
 - sensoro-scanner-\<Version\>.jar
 - sensorocloud-\<Version\>.jar
 - sensorobeaconkit-\<Version\>.jar
-//可选包
+- //可选包
 - android-async-http-1.4.6.jar
 - greendao-1.3.7.jar
 - gson-2.3.1.jar
