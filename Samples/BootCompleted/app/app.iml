@@ -98,11 +98,11 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Gradle: __local_jars__:/Users/sensoro/develop/temp/demo/SDK-Android/Samples/BootCompleted/app/libs/android-async-http-1.4.6.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.android.support:appcompat-v7-21.0.3" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: __local_jars__:/Users/sensoro/develop/temp/demo/SDK-Android/Samples/BootCompleted/app/libs/sensorocloud-3.2.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.android.support:support-v4-21.0.3" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.google.code.gson:gson:2.8.5@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: __local_jars__:/Users/sensoro/develop/temp/demo/SDK-Android/Samples/BootCompleted/app/libs/greendao-1.3.7.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: com.android.support:support-annotations:21.0.3@jar" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: __local_jars__:/Users/sensoro/develop/temp/demo/SDK-Android/Samples/BootCompleted/app/libs/sensorocloud-4.1.2.jar:unspecified@jar" level="project" />
     <orderEntry type="library" exported="" name="Gradle: __local_jars__:/Users/sensoro/develop/temp/demo/SDK-Android/Samples/BootCompleted/app/libs/sensorobeaconkit-3.2.2.jar:unspecified@jar" level="project" />
   </component>
 </module>
