@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="dark">#666666</color>
+    <color name="normal">#EEEEEE</color>
+    <color name="glare">#FFCC00</color>
+    <color name="background">#FF222222</color>
+    <color name="textColor">#FF9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+
+<color name="black">#000000</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="6dp" >
+
+    <com.sensoro.experience.tool.TTFIcon
+        android:id="@+id/fragment_detail_grid_item_iv"
+        android:layout_width="@dimen/detail_item_radius"
+        android:layout_height="@dimen/detail_item_radius"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_circle"
+        android:gravity="center"
+        android:padding="@dimen/detail_grid_img_padding"                                                 android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/fragment_detail_grid_item_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/textColor" />
+
+</LinearLayout>
