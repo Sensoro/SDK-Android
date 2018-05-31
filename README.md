@@ -28,9 +28,12 @@ The SDK includes following modules：
 - sensoro-scanner-\<Version\>.jar
 - sensorocloud-\<Version\>.jar
 - sensorobeaconkit-\<Version\>.jar
-- android-async-http-1.4.6.jar
-- greendao-1.3.7.jar
-- gson-2.3.1.jar
+- //添加gson包
+- compile 'com.google.code.gson:gson:2.8.5'
+- //网络请求包
+- compile 'com.loopj.android:android-async-http:1.4.9'
+- compile 'org.apache.httpcomponents:httpcore:4.4.1'
+
 
 
 
