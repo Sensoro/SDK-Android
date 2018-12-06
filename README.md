@@ -1,3 +1,5 @@
+**Warning** This SDK only support android 7.0 and less. 
+
 Android SDK
 =================
 Yunzi and Sensoro Tag are a kind of wireless intelligent sensor integrated with iBeacon function. 
